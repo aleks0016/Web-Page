@@ -1,0 +1,191 @@
+/* Main */
+
+body {
+    color: cyan;
+    font-style: italic;
+  }
+
+/* text styles */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 15px;
+}
+
+p {
+    margin-left: 15px;
+}
+
+/* hr styles */
+
+hr {
+    height: 10px;
+    background-color: aquamarine;
+}
+
+.hr1 {
+    width: 60%;
+}
+
+.hr2 {
+    margin-left: 10px;
+    margin-right: 500px;
+}
+
+.hr2-1 {
+    margin-left: 500px;
+    margin-right: 10px;
+}
+
+/* image sizes */
+
+img {
+    display: block;
+}
+
+.minisizedimg {
+    width: 50px;
+}
+
+.smallsizedimg {
+    width: 75px;
+    height: 100px;
+}
+
+.mediumsizedimg {
+    width: 150px;
+    height: 200px;
+}
+
+.largesizedimg {
+    width: 300px;
+    height: 400px;
+}
+
+.gigasizedimg {
+    width: 600px;
+    height: 800px;
+}
+
+.longsizedimg {
+    width: 300px;
+    height: auto;
+}
+
+.educationimages {
+    width: 200px;
+}
+
+/* Table */
+.column {
+    padding: 20px;
+  }
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: flex !important;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    justify-content: end;
+}
+
+/* Map */
+#map {
+    height: 200px;
+    /* The height is 200 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    margin-left: 5px;
+}
+
+/* Info */
+.infoDrop {
+    display: none;
+}
+.infoDrop_show {
+    display: block;
+    line-height: .8em;
+}
+button#infoBtn {
+    background-color: transparent;
+    border: none;
+}
+button#infoBtn:focus {
+    outline: none;
+}
+
+/* Education */
+.educationDrop {
+    display: none;
+}
+.educationDrop_show {
+    display: block;
+    line-height: .8em;
+    height: 150px;
+}
+button#educationBtn {
+    background-color: transparent;
+    border: none
+}
+
+button#educationBtn:focus {
+    outline: none
+}
+
+/* Work */
+.workDrop {
+    display: none;
+}
+.workDrop_show {
+    display: block;
+    line-height: .8em;
+}
+button#workBtn {
+    background-color: transparent;
+    border: none;
+}
+button#workBtn:focus {
+    outline: none;
+}
+
+/* Personlige egenskaper */
+.skillsDrop {
+    display: none;
+}
+.skillsDrop_show {
+    display: block;
+    line-height: .8em;
+}
+button#skillsBtn {
+    background-color: transparent;
+    border: none;
+}
+button#skillsBtn:focus {
+    outline: none;
+}
+
+/* Arbeidsegenskaper */
+.characterDrop {
+    display: none;
+}
+.characterDrop_show {
+    display: block;
+    line-height: .8em;
+}
+button#characterBtn {
+    background-color: transparent;
+    border: none;
+}
+button#charaterBtn:focus {
+    outline: none;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Website with Bootstrap</title>
+    <!-- Link til CSS --><link rel="stylesheet" href="../css/main.css">
+    <!-- Link til Javascript --><script type="text/javascript" src="../js/index.js"></script>
+    <!-- Link til Font Awesome --><script src="https://kit.fontawesome.com/d11723fac3.js" crossorigin="anonymous"></script>
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <!-- Google Maps -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="/js/index.js"></script>
+    <!-- Link to google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Logo -->
+    <link rel="icon" href="../img/Logo.png">
+
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    
+    <nav class="navbar sticky-top navbar-expand-lg bg-light topnav">
+      <div style="position: absolute;">
+        <!-- Display of date and time -->
+        <div class="date"></div>
+        <div class="time"></div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Home -->
+          <li class="nav-item">
+            <i class="center fas fa-home"></i>
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <!-- Utdanning -->
+            <li class="nav-item">
+              <i class="center fas fa-school"></i>
+              <a class="nav-link" href="./education.html">Utdanning</a>
+            </li>
+            <!-- Arbeidserfaring -->
+            <li class="nav-item">
+              <i class="center fas fa-briefcase"></i>
+              <a class="nav-link" href="./work-experience.html">Arbeidserfaring</a>
+            </li>
+            <!-- Hobbyer-->
+             <li class="nav-item">
+               <i class="center fas fa-headset"></i>
+              <a class="nav-link" href="./hobbies.html">Hobbyer</a>
+            </li>
+            <!-- Personalia -->
+            <li class="nav-item">
+              <i class="center fas fa-person"></i>
+              <a class="nav-link active" href="./personalia.html">Personalia</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <br>
+    <h1 class="text-center">CV</h1>
+    <hr class="border border-primary border-3 opacity-75 hr1">
+      <h2 class="text-center">Aleksander Holt</h2>
+      <br>
+    <table class="table text-center mx-auto" style="width: 18%;">
+      <thead>
+        <tr>
+          <td><li class="fas fa-baby"></li> Født: 28. september 2006</td>
+        </tr>
+            <tr>
+              <td><li class="fas fa-home"></li> Gullskåret, 1664 Rolvsøy</td>
+            </tr>
+            <tr>
+              <td><li class="fas fa-envelope"></li><a href="mailto:aleksanhol1@gmail.com"> aleksanhol1@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><li class="fas fa-phone"></li><a href="tel:980-19-602"> 980 19 602</a></td>
+            </tr>
+          </thead>
+        </table>
+
+    <br><br>
+
+    <!-- Mine opplysninger-->
+    <div id="info">
+      <button id="infoBtn" onclick="infoBtn()"><h2>Mine opplysninger <li class="fas fa-person"></li> <i class="fa-solid fa-arrow-down"></i></h2></button>
+
+      <hr class="border border-primary border-3 opacity-75 hr2">
+      
+      <div id="infoDrop" class="infoDrop">
+        <p>Jeg er en 16 år gammel gutt som går på Glemmen Videregående Skole</p>
+        <p>På Glemmen Videregående Skole studerer jeg Informasjonsteknologi og Medieproduksjon</p>
+        <p>På fritiden liker jeg å være sosial, sykle og jobbe med programmering</p>
+        <p>Min drømmejobb akkurat nå er å jobbe innenfor programmering</p>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+      <div class="text-right">
+        <button id="educationBtn" onclick="educationBtn()"><h2><i class="fa-solid fa-arrow-down"></i> <li class="fas fa-school"></li> Utdanning</h2></button>
+      </div>
+        
+      <hr class="border border-primary border-3 opacity-75 hr2-1">
+
+      <div id="educationDrop" class="educationDrop">
+        <table class="table text-center float-right" style="width: 60%">
+          <thead>
+            <tr>
+              <th>Når</th>
+              <th>Hvor</th>
+              <th>Hva</th>
+            </tr>
+            <tr>
+              <td>August 2012 - Juni 2019</td>
+              <td>Rekustad skole</td>
+              <td>Grunnskole</td>
+            </tr>
+            <tr>
+              <td>August 2019 - Juni 2022</td>
+              <td>Haugeåsen ungdomsskole</td>
+              <td>Grunnskole</td>
+            </tr>
+            <tr>
+              <td>August 2022 - Juni 2023</td>
+              <td>Glemmen Videregående Skole</td>
+              <td>Informasjonsteknologi og Medieproduksjon</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+    <!-- Work Experience-->
+    <div id="work">
+      <button id="workBtn" onclick="workBtn()"><h2>Arbeidserfaring <li class="fas fa-briefcase"></li> <i class="fa-solid fa-arrow-down"></i></h2></button>
+    
+      <hr class="border border-primary border-3 opacity-75 hr2">
+    
+      <div id="workDrop" class="workDrop">
+      <table class="table text-center" style="width: 65%;">
+        <thead>
+          <tr>
+            <th>Når</th>
+            <th>Hvor</th>
+            <th>Hva</th>
+          </tr>
+          <tr>
+            <td>Oktober 2021 -</td>
+            <td>Rolvsøy & Glemmen Menigheter</td>
+            <td>Frivilling ungdomsleder</td>
+          </tr>
+          <tr>
+            <td>September 2022 -</td>
+            <td>Glemmen Videregående Skole</td>
+            <td>Avdelingstillitsvalgt for Informasjonsteknologi og Medieproduksjon</td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+
+  <!-- Personlige egenskaper -->
+  <div id="skills">
+    <div class="text-right">
+      <button id="skillsBtn" onclick="skillsBtn()"><h2><i class="fa-solid fa-arrow-down"></i> <li class="fas fa-person-circle-question"></li> Personlige egenskaper</h2></button>
+    </div>
+    <hr class="border border-primary border-3 opacity-75 hr2-1">
+    <div id="skillsDrop" class="skillsDrop" style="float: right; margin-right: 160px;">
+        <p> <i class="fas fa-person-circle-question"></i> Inkluderende</p>
+        <p> <i class="fas fa-home"></i> Nysgjerrig</p>
+        <p> <i class="fas fa-hand-holding-heart"></i> Omtenksom</p>
+        <p> <i class="fab fa-hire-a-helper"></i> Hjelpsom</p>
+        <p> <i class="fas fa-location-dot"></i> Punktlig</p>
+        <p> <i class="fas fa-face-smile"></i> Positiv</p>
+    </div>
+  </div>
+
+      <!-- Egenskaper innenfor arbeid -->
+  <div id="character">
+    <button id="characterBtn" onclick="characterBtn()"><h2>Egenskaper innenfor arbeid <li class="fas fa-folder-tree"></li> <i class="fa-solid fa-arrow-down"></i></h2></button>
+  </div>
+  <hr class="border border-primary border-3 opacity-75 hr2">
+
+  <div id="characterDrop" class="characterDrop" style="margin-left: 160px;">
+    <p><i class="fas fa-folder-tree"></i> Strukturert</p>
+    <p><i class="fas fa-check-to-slot"></i> Arbeidsvillig</p>
+    <p><i class="fas fa-reply"></i> Ansvarsfull</p>
+    <p><i class="far fa-message"></i> God til å kommunisere</p>
+  </div>
+
+  <p style="padding-top: 95px"></p>
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-color text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+  
+      <!-- Right -->
+    </section>
+    
+    <!-- Section: Social media -->
+    
+    <div class="row d-inline-flex">
+      <!-- Email -->
+      <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+      href="mailto:aleksanhol1@gmail.com" role="button"><i class="fas fa-envelope"></i></a>
+      <!-- Phone -->
+      <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+            href="tel:980-19-602" role="button"><i class="fas fa-phone"></i></a> 
+            <!-- Instagram -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+            href="https://www.instagram.com/aleks06ander/?next=%2Faleks06ander%2F" role="button" target="_blank">
+            <i class="fab fa-instagram"></i></a>
+            <!-- Facebook -->
+            <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+            href="https://www.facebook.com/alehol06" role="button" target="_blank">
+            <i class="fab fa-facebook"></i></a>
+          </div>
+  
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3" style="margin-right: 60px;"></i>
+            </h6>
+            <p>
+              <a href="https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im" 
+                style="margin-right: 80px;"
+                target="_blank">IT og Medieproduksjon</a>
+                <br> 
+                <a href="https://viken.no/glemmen-vgs/" style="margin-right: 80px;" target="_blank">Glemmen VGS</a>
+              </p>
+            <a href="https://viken.no/glemmen-vgs/" target="_blank"><img class="longsizedimg" style="margin-left: -20%;"
+              src="/img/Education/Glemmen VGS.png" alt="My School"></a>
+            </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <table class="table">
+              <thead>
+                <tr>
+                  <td>
+                      <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+                      href="/index.html" role="button"> <i class="fas fa-home"></i><br> Home</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+                    href="../html/education.html" role="button"><i class="fas fa-school"></i><br> Utdanning</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+                    href="../html/work-experience.html" role="button"><i class="fas fa-briefcase"></i><br> Arbeidserfaring</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a class="btn text-white btn-floating m-1" style="background-color: #6c757d;"
+                    href="../html/personalia.html" role="button"><i class="fas fa-person"></i><br> Personalia</a>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="text-align: left">
+            <h6 class="text-uppercase fw-bold mb-4" style="text-align: center">Contact</h6>
+            <!-- Links -->
+            <table>
+              <thead>
+                <tr>
+                  <td>
+                    <p style="width: 95%;"><i class="fas fa-home me-3"></i> Gullskåret, 1664 Rolvsøy, Norge</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><i class="fas fa-envelope me-3"></i> <a href="mailto:aleksanhol1@gmail.com">aleksanhol1@gmail.com</a></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p><i class="fas fa-phone me-3"></i><a href="tel:980-19-602">+47 980 19 602</a></p>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+            <br>
+            <p style="text-align: center;">Where to find me:</p>
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmfCdyHbqbEycFqO5gKXxzSUcU6SVD6fA&callback=initMap&v=weekly"
+            defer
+            ></script>
+
+            
+            <!-- Grid column -->
+          </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="../index.html">Aleksander Holt</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
